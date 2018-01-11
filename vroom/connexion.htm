@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8" />
-		<link rel="icon" href="VroomLogo.png">
-		<title>Création de compte - Vroom</title>
-		<link rel="stylesheet" media="screen" href="./css/style.css" />
-	</head>
-	<body>
-		<header id="header">
+<head>
+	<meta charset="UTF-8" />
+	<link rel="icon" href="VroomLogo.png"/>
+	<title>Connexion</title>
+	<link rel="stylesheet" media="screen" href="./css/style.css" />
+</head>
+<header id="header">
 			<nav>
 				<ul class="" id="main-nav-list">
 					<li>
@@ -25,26 +24,22 @@
 				</ul>
 			</nav>
 		</header>
-		<div id="conteneur-logo">
-			<img class="logo" src="./images/VroomLogo.png" title='logo'>
-
-			<h2 class="slogan">ça roule ma poule !!</h2>
-		</div>
-	<!--code metier-->
-		<div  id="creer_compte">
+<body>
+	<h1>Connexion</h1>
+	<div  id="connecter">
 			<div>
 				<label for="username">Identifiant : </label>
-				<input type="email" name="username" id="username" placeholder="email">
+				<input type="email" name="userConnexion" id="userConnexion" placeholder="email">
 			</div>
 			<div>
 				<label for="password">Mot de passe : </label>
-				<input type="password" name="password" id="password" placeholder="mot de passe">
+				<input type="password" name="passwordConnexion" id="passwordConnexion" placeholder="mot de passe">
 			</div>
 			<div>
-				<button onclick="check()" class="bouton-bubblegun">Valider</button>
+				<!-- Verifier le JS de login()-->
+				<button onclick="login()" class="bouton-bubblegun">Valider</button>
 				<span id="statusMsg"></span>
 			</div>
 		</div>
-		<script src="./scripts/creer_compte.js" type="text/javascript"></script>
-	</body>
+</body>
 </html>
