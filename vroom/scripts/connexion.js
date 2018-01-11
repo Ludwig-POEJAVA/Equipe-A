@@ -38,11 +38,10 @@ function doesThisPasswordMatch(username, password)
 	for (let i = 0; i < listUsers.length; i++)
 	{
 		if (listUsers[i].name === username) //todo
-		{console.log(listUsers[i], password)
+		{
 			//trouver le bon utilisateur
 			if(listUsers[i].pwd == password)
 			{
-
 				// c'est donc le bon password
 				return true;
 			}
