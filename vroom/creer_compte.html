@@ -1,17 +1,23 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 	<head>
 		<meta charset="UTF-8" />
-		<title>METTRE UN TITRE ICI</title>
+		<title>Création de compte - Vroom</title>
 		<link rel="stylesheet" media="screen" href="./style.css" />
 	</head>
 	<body>
-	<!--	<form>-->
-			<label for="username">Identifiant : 	</label><input type="email"     name="username" id="username" placeholder="email"><br />
-			<label for="password">Mot de passe : </label><input type="password" name="password" id="password" placeholder="mot de passe"><br />
-			<button onclick="check()" class="bouton-bubblegun">Valider</button><br />
+		<div>
+			<label for="username">Identifiant : </label>
+			<input type="email" name="username" id="username" placeholder="email">
+		</div>
+		<div>
+			<label for="password">Mot de passe : </label>
+			<input type="password" name="password" id="password" placeholder="mot de passe">
+		</div>
+		<div>
+			<button onclick="check()" class="bouton-bubblegun">Valider</button>
 			<span id="statusMsg"></span>
-	<!--	</form>-->
+		</div>
 		<script src="creer_compte.js" type="text/javascript"></script>
 	</body>
 </html>
