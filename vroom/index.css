@@ -4,11 +4,11 @@
 
   display: inline-block;
 
-vertical-align: top;
-margin-left: 1.5%;
-margin-right: 1.5%;
-  height: 600px;
-text-align: justify;
+	vertical-align: top;
+	margin-left: 1.5%;
+	margin-right: 1.5%;
+	height: 600px;
+	text-align: justify;
 }
 
 /*align à faire
@@ -16,20 +16,24 @@ taille des images
 modifier le logo
 */
 
-.logo {
-	display: inline-block;
-	width: 300px;
+#conteneur-logo {
+	width: 700px;
+	margin: auto;
+}
 
+.logo {
+	display: block;
+	width: 300px;
+	/*vertical-align: center;*/
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .slogan {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	line-height: 1.5;
 	font-size: 3em;
-	width: 600px;
-	text-align: right;
-	margin-left: 20%;
-
+	text-align: center;
 }
 
 #header {
