@@ -91,3 +91,18 @@ img.imageGroupe {
 	width: 120px;
 	display:inline-block;
 }
+
+
+#footer {
+	list-style-type: none;
+
+}
+
+#footer {
+	background-color: #0000d5;
+	background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo,
+		violet);
+	height: 80px;
+	padding: 0 16px;
+
+}
