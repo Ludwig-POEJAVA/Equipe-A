@@ -1,44 +1,46 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
-		<link rel="icon" href="VroomLogo.png">
 		<meta charset="UTF-8" />
+		<link rel="icon" href="VroomLogo.png">
 		<title>Création de compte - Vroom</title>
 		<link rel="stylesheet" media="screen" href="./css/style.css" />
 	</head>
 	<body>
 		<header id="header">
-			<nav >
-				<ul id="main-nav-list" class="">
+			<nav>
+				<ul class="" id="main-nav-list">
+					<li>
+						<a class="main-nav-link" href="./index.htm" title="vers accueil">Accueil</a>
+					</li>
 					<li>
 						<a class="main-nav-link" href="./nous.htm" title="voir page qui sommes nous">Qui Sommes Nous ?</a>
 					</li>
 					<li>
-						<a class="main-nav-link" href="" title="voir page qui sommes nous">-</a>
-					</li>
-					<li>
-						<a class="main-nav-link" href="" title="voir page qui sommes nous">-</a>
+						<a class="main-nav-link" href="./creer_compte.htm" title="créer un compte">Créér un compte</a>
 					</li>
 				</ul>
 			</nav>
 		</header>
 		<div>
 			<h1 class="titre"> VROOM </h1>
-			<img class="logo" src="./images/VroomLogo.png" title:'logo' >
+			<img class="logo" src="./images/VroomLogo.png" title='logo' >
 			<h2 class="logo slogan">ça roule ma poule !!</h2>
 		</div>	
 	<!--code metier-->
-		<div>
-			<label for="username">Identifiant : </label>
-			<input type="email" name="username" id="username" placeholder="email">
-		</div>
-		<div>
-			<label for="password">Mot de passe : </label>
-			<input type="password" name="password" id="password" placeholder="mot de passe">
-		</div>
-		<div>
-			<button onclick="check()" class="bouton-bubblegun">Valider</button>
-			<span id="statusMsg"></span>
+		<div  id="creer_compte">
+			<div>
+				<label for="username">Identifiant : </label>
+				<input type="email" name="username" id="username" placeholder="email">
+			</div>
+			<div>
+				<label for="password">Mot de passe : </label>
+				<input type="password" name="password" id="password" placeholder="mot de passe">
+			</div>
+			<div>
+				<button onclick="check()" class="bouton-bubblegun">Valider</button>
+				<span id="statusMsg"></span>
+			</div>
 		</div>
 		<script src="./scripts/creer_compte.js" type="text/javascript"></script>
 	</body>
