@@ -1,47 +1,50 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="UTF-8" />
-	<link rel="icon" href="VroomLogo.png"/>
-	<title>Connexion</title>
-	<link rel="stylesheet" media="screen" href="./css/style.css" />
-</head>
-		<header id="header">
-			<nav>
-				<ul class="" id="main-nav-list">
-					<li>
-						<a class="main-nav-link" href="./index.htm" title="vers accueil">Accueil</a>
-					</li>
-					<li>
-						<a class="main-nav-link" href="./nous.htm" title="voir page qui sommes nous">Qui Sommes Nous ?</a>
-					</li>
-					<li>
-						<a class="main-nav-link" href="./creer_compte.htm" title="créer un compte">Créér un compte</a>
-					</li>
-					<li id="connexion">
-						<a class="main-nav-link" href="./connexion.htm" title="connexion">Connexion</a>
-					</li>
-					<div id="boutonDeco"></div>
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" href="VroomLogo.png"/>
+		<title>Connexion</title>
+		<link rel="stylesheet" media="screen" href="./css/style.css" />
+	</head>
+	<header id="header">
+		<nav>
+			<ul class="" id="main-nav-list">
+				<li>
+					<a class="main-nav-link" href="./index.htm" title="vers accueil">Accueil</a>
+				</li>
+				<li>
+					<a class="main-nav-link" href="./nous.htm" title="voir page qui sommes nous">Qui Sommes Nous ?</a>
+				</li>
+				<li>
+					<a class="main-nav-link" href="./creer_compte.htm" title="créer un compte">Créér un compte</a>
+				</li>
+				<li id="connexion">
+					<a class="main-nav-link" href="./connexion.htm" title="connexion">Connexion</a>
+				</li>
+				<div id="boutonDeco"></div>
 
-				</ul>
-			</nav>
-		</header>
-<body>
-	<h1>Connexion</h1>
-	<div  id="connecter">
-			<div>
-				<label for="username">Identifiant : </label>
-				<input type="email" name="userConnexion" id="userConnexion" placeholder="email">
+			</ul>
+		</nav>
+	</header>
+	<body>
+		<h1>Connexion</h1>
+		<div  id="connecter">
+			<!--<form action="homepageclient.html" method="post">-->
+				<div>
+					<label for="username">Identifiant : </label>
+					<input type="email" name="userConnexion" id="userConnexion" placeholder="email">
+				</div>
+				<div>
+					<label for="password">Mot de passe : </label>
+					<input type="password" name="passwordConnexion" id="passwordConnexion" placeholder="mot de passe">
+				</div>
+				<div>
+					<!-- Verifier le JS de login()-->
+					<button onclick="login()" class="bouton-bubblegun">Valider</button>
+					<span id="statusMsg"></span>
+				</div>
 			</div>
-			<div>
-				<label for="password">Mot de passe : </label>
-				<input type="password" name="passwordConnexion" id="passwordConnexion" placeholder="mot de passe">
-			</div>
-			<div>
-				<!-- Verifier le JS de login()-->
-				<button onclick="login()" class="bouton-bubblegun">Valider</button>
-				<span id="statusMsg"></span>
-			</div>
-		</div>
-</body>
+		<!--</form>-->
+		<script src="./scripts/connexion.js" type="text/javascript"></script>
+	</body>
 </html>

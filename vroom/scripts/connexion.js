@@ -1,10 +1,10 @@
 
 
 // Username identique au
-function connectionUser()
+function login()
 {
-	let username = document.getElementById("username").value;
-	let password = document.getElementById("password").value;
+	let username = document.getElementById("userConnexion").value;
+	let password = document.getElementById("passwordConnexion").value;
 
 	if(!doesThisUserExist(username)){
 		dispStatusMsg("Cet email n'éxiste pas, créer un compte ?",'nok');
@@ -16,6 +16,9 @@ function connectionUser()
 		return false;
 	}
 	//tout est bon
+	dispStatusMsg("utilisateur connecté");
+	//rediriger
+	window.location.href = './homepageclient.html';
 	return true;
 }
 
@@ -35,10 +38,11 @@ function doesThisPasswordMatch(username, password)
 	for (let i = 0; i < listUsers.length; i++)
 	{
 		if (listUsers[i].name === username) //todo
-		{
+		{console.log(listUsers[i], password)
 			//trouver le bon utilisateur
-			if(listUsers[i].password === password)
+			if(listUsers[i].pwd == password)
 			{
+
 				// c'est donc le bon password
 				return true;
 			}
@@ -84,3 +88,21 @@ function dispStatusMsg(message, css_class = 'ok')
 	ctnr.innerHTML = message;
 	ctnr.className = 'info-' + css_class;
 }
+
+
+
+
+function deconnexion () {
+	userConnexion = null;
+	passwordConnexion = null;
+	//suppression du bouton après déconnexion => Voir fct connexion
+	document.getElementById("connexion").innerHTML = '<a class="main-nav-link" href="./connexion.htm" title="connexion">Connexion</a>';
+	document.getElementById("boutonDeco").innerHTML = '';
+}
+
+function connexion() {
+	document.getElementById("boutonDeco").innerHTML = '<button onclick="deconnexion()">Déconnexion</button>';
+	document.getElementById("connexion").innerHTML = '';
+}
+
+
