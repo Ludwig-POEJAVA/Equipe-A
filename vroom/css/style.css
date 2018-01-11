@@ -1,2 +1,89 @@
-*{
+.contenu {
+
+  width: 30%;
+
+  display: inline-block;
+
+	vertical-align: top;
+	margin-left: 1.5%;
+	margin-right: 1.5%;
+	height: 600px;
+	text-align: justify;
+}
+
+/*align à faire
+taille des images
+modifier le logo
+*/
+
+#conteneur-logo {
+	width: 700px;
+	margin: auto;
+}
+
+.logo {
+	display: block;
+	width: 300px;
+	/*vertical-align: center;*/
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.slogan {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	line-height: 1.5;
+	font-size: 3em;
+	text-align: center;
+}
+
+#header {
+	background-color: #0000d5;
+	background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo,
+		violet);
+	height: 60px;
+	padding: 0 16px;
+
+}
+
+.main-nav-link {
+	color: white;
+	
+}
+
+#main-nav-list {
+	list-style-type: none;
+	
+
+}
+
+#main-nav-list li {
+	display: inline;
+}
+
+.titre {
+	font-family: "Comic Sans MS";
+	line-height: 1.5;
+	font-size: 3em;
+	text-align: center;
+}
+
+.info-ok{
+	background:#80ff80;
+}
+.info-nok{
+	background:#ff8080;
+}
+
+img.imageGroupe {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.mainText {
+	text-align: justify;
+	margin-top:40px;
+	margin-right:10%;
+	margin-bottom:40em;
+	margin-left:10%;
 }
