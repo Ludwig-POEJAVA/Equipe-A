@@ -88,7 +88,7 @@ function checkExistingUser(username)
 	//pour chaque user, comaprer le nom
 	for (let i = 0; i < listUsers.length; i++)
 	{
-		if (listUsers[i].name == username)
+		if (listUsers[i].name === username) //todo
 		{
 			//indiquer un résultat positif dès le premier trouvé
 			return true;

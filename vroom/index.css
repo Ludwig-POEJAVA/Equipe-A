@@ -66,3 +66,10 @@ modifier le logo
 	font-size: 3em;
 	text-align: center;
 }
+
+.info-ok{
+	background:#80ff80;
+}
+.info-nok{
+	background:#ff8080;
+}
